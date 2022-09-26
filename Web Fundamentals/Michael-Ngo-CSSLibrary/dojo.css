@@ -1,0 +1,126 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  /* Fixed width container class that will "auto-center" itself */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Button Style */
+.btn {
+    background-color:white;
+    border-color:aquamarine;
+    color:aquamarine;
+    border-radius: 12px;
+    padding: 5px;
+    width:150px;
+    height:30px;
+    text-align: center;
+    margin:5px;
+}
+
+/* .row and .col */
+.row {
+    display:flex;
+    background-color: white;
+}
+
+.col,.col-2,.col-3 {
+    padding: 20px;
+    margin: 10px;
+    background-color:#5C99A0;
+}
+
+.col {
+    flex:1;
+}
+
+.col-2 {
+    flex:2;
+}
+
+.col-3 {
+    flex:3;
+}
+
+/* Navbar  */
+.nav {
+    width: 1000px;
+    height: 40px;
+    background-color: #2D2D2D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.nav-links {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav a {
+    color:white;
+    text-decoration: none;
+}
+
+.btn {
+    height: auto;
+    width:100px;
+    background-color: #2099AE;
+    border: 2px black;
+    box-shadow: 5px 5px 5px black;
+}
+
+/* User Card */
+.user-card{
+    width:450px;
+    height: 0 auto;
+    margin: 40px;
+    border: 2px solid #CCCCCC; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position:absolute;
+}
+
+.card-header {
+    width: 0 auto;
+    height: 75px;
+    background-color: #4B9FB5;
+
+}
+
+.card-header img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.card-body {
+    height: 195px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.card-body img {
+    width:15px;
+    height:0 auto;
+}

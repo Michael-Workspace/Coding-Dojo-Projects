@@ -1,0 +1,38 @@
+.search {
+background-color:white;
+border-color:aquamarine;
+color:aquamarine;
+border-radius: 12px;
+padding: 5px;
+width:150px;
+height:30px;
+text-align: center;
+margin:5px;
+}
+
+.plus {
+background-color: aquamarine;
+color: white;
+border-radius: 50%;
+border-color:aquamarine;
+padding:10px;
+height:30px;
+width:30px;
+line-height: 0px;
+text-align: center;
+margin:5px;
+}
+
+.create {
+background-color:blue;
+color:white;
+box-shadow:5px 5px 5px black, -.2em 0 .5em black;
+border-radius: 2px;
+border-color: black;
+padding: 5px;
+width: 200px;
+height: 50px;
+text-align: center;
+margin: 5px;
+font-size: 20px;
+}

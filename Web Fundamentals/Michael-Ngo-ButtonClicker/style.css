@@ -1,0 +1,137 @@
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+}
+
+header {
+    width: 669px;
+    height: 40px;
+    margin-inline: 150px;
+    background-color: #C5C5C5;
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline: 10px;
+}
+
+.name {
+    font-size: 30px;
+    margin-left: -20px; 
+}
+
+.search {
+    width:250px;
+    height: 25px;
+    margin-top: 7px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    border-radius: 0%;
+    width: 70px;
+    height: 25px;
+    margin-top: 5px;
+    background-color: #2170DD;
+    color: white;
+    border: 2px solid black;
+    box-shadow:2px 2px 2px black, -.2em 0 .5em black;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-row {
+    width:575px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.side-row {
+    width: 100px;
+    flex: 2;
+}
+
+.box {
+    width:400px;
+    height: 175px;
+    border: 2px solid black;
+    margin: 10px;
+    margin-inline: 150px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.box-btn {
+    width: 75px;
+    height: 30px;
+    margin: 10px;
+    margin-top: 20px;
+    background-color: #FFD262;
+    border: 2px solid black;
+    box-shadow:2px 2px 2px black, -.2em 0 .5em black;
+    font-weight: bold;
+}
+
+.terms {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    text-align: center;
+}
+
+.meaning {
+    margin: 20px;
+}
+
+.noun {
+    font-style: italic;
+}
+
+.side-box {
+    width: 240px;
+    height: auto;
+    margin: 20px;
+    margin-left: -5px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.side-box h1 {
+    margin: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.def-btn {
+    width: 200px;
+    height: 35px;
+    margin: 20px;
+    margin-top: 2px;
+    background-color: #8BBC74;
+    border: 2px solid black;
+    box-shadow:2px 2px 2px black, -.2em 0 .5em black;
+    font-weight: bold;
+    font-size: 15px;
+}

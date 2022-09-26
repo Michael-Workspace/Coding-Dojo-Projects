@@ -1,0 +1,30 @@
+h1 {
+background-color: black;
+text-align: left;
+margin: 5px;
+padding: 10px;
+}
+
+.my {
+    color:white;
+}
+
+.cloud {
+    color:aquamarine;
+}
+
+h2 {
+background-color: blueviolet;
+color: white;
+text-align: center;
+font-style: italic;
+margin:5px;
+}
+
+h3 {
+background-color: aqua;
+color: black;
+text-align: right;
+text-decoration: underline;
+margin:5px;
+}

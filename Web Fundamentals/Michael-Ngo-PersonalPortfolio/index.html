@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <title>Personal Portfolio - Michael Ngo</title>
+</head>
+<body>
+    <h1>Michael Ngo</h1>
+    <img src="me.jpg" alt="Michael's Selfie" width="150" height="150">
+    <div> 
+        <img src="github.png" alt="Github Link" width="20" height="20">
+            <a href="https://github.com/Michael-Workspace">My Github</a>
+        <img src="linkedin.png" alt="Linkedin Link" width="20" height="20">
+            <a href="https://www.linkedin.com/in/michaelngo1995/">My Linkedin</a>
+        <img src="gmail.png" alt="Email" width="20" height="20">
+            <a href="mikey.exe.12@gmail.com">My Email</a>
+    </div>
+
+    <h3>Technologies</h3>
+    <table>
+        <tr>
+            <th>Front-End</th>
+            <th>Python</th>
+            <th>JavaScript</th>
+            <th>Database</th>
+            <th>Concepts</th>
+        </tr>
+        <tr>
+            <td>HTML5</td>
+            <td>Django</td>
+            <td>Express</td>
+            <td>MySQL</td>
+            <td>AJAX</td>
+        </tr>
+        <tr>
+            <td>CSS3</td>
+            <td>Flask</td>
+            <td>Mongoose</td>
+            <td>MongoDB</td>
+            <td>OOP</td>
+        </tr>
+        <tr>
+            <td>Bootstrap</td>
+            <td>Unittest</td>
+            <td>React</td>
+            <td></td>
+            <td>REST</td>
+        </tr>
+    </table>
+
+    <h3>Projects</h3>
+    <ul>
+        <li>Airplane Game - <a href="https://github.com/Michael-Workspace/Pre-Bootcamp-Public/tree/main/Michael-Ngo-Airplane2">Code</a></li>
+        <li>Ninja Game - <a href="https://github.com/Michael-Workspace/Pre-Bootcamp-Public/tree/main/Michael-Ngo-NinjaChallege2">Code</a></li>
+    </ul>
+
+    <h3>Contact Me</h3>
+    <form action="/process" method="post">
+        <div>
+            <label>Name: </label>
+            <input type="text" name="name" placeholder="Your Name...">
+            <label>Email: </label>
+            <input type="text" name="email" placeholder="Your Email...">
+        </div>
+        <div>
+            <label>Message:</label>
+            <textarea name="comment" cols="40" rows="6"></textarea>
+        </div>
+        <input type="submit" value="Send Message">
+    </form>
+
+</body>
+</html>

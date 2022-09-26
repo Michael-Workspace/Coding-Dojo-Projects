@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Network</h1>
+    </header>
+    <!-- Title -->
+    <nav>
+        <h1>Your Feed</h1>
+    </nav>
+    <main>
+        <!-- User Card -->
+        <section class="name-card">
+            <img src="img/me-s.jpg" alt="Michael Ngo's picture">
+            <a href="#">Add an avatar</a>
+            <h1>Michael Ngo</h1>
+        </section>
+        <!-- Feeds -->
+        <section class="feed">
+            <div class="neil">
+                <div class="name">Neil M</div>
+                <div class="ne-likes">9 like(s)</div>
+                <button class="ne-btn" onclick="neLike(this)">Like</button>
+                <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+            </div>
+            <div class="nichole">
+                <div class="name">Nichole K</div>
+                <div class="ni-likes">12 like(s)</div>
+                <button class="ni-btn" onclick="niLike(this)">Like</button>
+                <p>Just finished my <a href="#">next comic,</a> check it out</p>
+            </div>
+            <div class="jim">
+                <div class="name">Jim R</div>
+                <div class="ji-likes">9 like(s)</div>
+                <button class="ji-btn" onclick="jiLike(this)">Like</button>
+                <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>

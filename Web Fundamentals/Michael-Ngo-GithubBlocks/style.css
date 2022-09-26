@@ -1,0 +1,42 @@
+*{
+    background-color: #EBF1F7;
+    height:auto;
+    width: 1000px;
+}
+
+header {
+    color: #33404B;
+    text-align: center;
+    font-size: 50px ;
+}
+.row1, .row2, .row3 {
+    height: 300px;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.row1 img,.row2 img,.row3 img {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+}
+
+.row1 {
+    background-color:#47C3CA;
+}
+
+.row2{
+    background-color:#B18CA1 ;
+}
+
+.row3{
+    background-color:#FCFBF7 ;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    margin: 30px;
+}
