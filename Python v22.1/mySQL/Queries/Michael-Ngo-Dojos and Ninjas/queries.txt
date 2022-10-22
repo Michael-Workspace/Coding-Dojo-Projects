@@ -1,0 +1,63 @@
+1. Query: Create 3 new dojos
+
+INSERT INTO `dojos_and_ninjas`.`dojos` (`name`) 
+VALUES 
+('Dragon'),
+('Rabbit'),
+('Tiger');
+
+2. Query: Delete the 3 dojos you just created
+
+DELETE FROM `dojos_and_ninjas`.`dojos` WHERE (`id` = '2');
+DELETE FROM `dojos_and_ninjas`.`dojos` WHERE (`id` = '3');
+DELETE FROM `dojos_and_ninjas`.`dojos` WHERE (`id` = '4');
+
+3. Query: Create 3 more dojos
+
+INSERT INTO `dojos_and_ninjas`.`dojos` (`name`) 
+VALUES 
+('Dragon'),
+('Rabbit'),
+('Tiger');
+
+4. Query: Create 3 ninjas that belong to the first dojo
+
+INSERT INTO `dojos_and_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `dojo_id`) 
+VALUES 
+	('Michael', 'Ngo', '26', '1'),
+    	('Alexis', 'Miller', '24', '1'),
+    	('Tana', 'Inzar', '29', '1');
+
+5. Query: Create 3 ninjas that belong to the second dojo
+
+INSERT INTO `dojos_and_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `dojos_id`) 
+VALUES 
+	('Bilal', 'Inzar', '28', '2'),
+	('Blake', 'Hall', '24', '2'),
+	('Deedee', 'Kaka', '26', '2');
+
+6. Query: Create 3 ninjas that belong to the third dojo
+
+INSERT INTO `dojos_and_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `dojos_id`) 
+VALUES 
+	('Damion', 'Mcleod', '29', '3'),
+	('Mary', 'Nichols', '33', '3'),
+	('Zenas', 'Moges', '28', '3');
+
+7. Query: Retrieve all the ninjas from the first dojo
+
+SELECT * FROM dojos_and_ninjas.dojos
+	LEFT JOIN dojos_and_ninjas.ninjas ON dojos.id = ninjas.dojo_id
+	WHERE dojos.id= 1;
+
+8. Query: Retrieve all the ninjas from the last dojo
+
+SELECT * FROM dojos_and_ninjas.dojos
+	LEFT JOIN dojos_and_ninjas.ninjas ON dojos.id = ninjas.dojo_id
+	WHERE dojos.id= (SELECT id FROM dojos_and_ninjas.dojos ORDER BY id DESC LIMIT 1);
+
+9. Query: Retrieve the last ninja's dojo
+
+SELECT * FROM dojos_and_ninjas.dojos 
+	WHERE dojos.id= (SELECT dojo_id FROM dojos_and_ninjas.ninjas ORDER BY dojo_id DESC LIMIT 1); 
+
