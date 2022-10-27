@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container, .maininput, .correct, .high, .low{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+        }
+        .correct{
+            height:75px;
+            width: 500px;
+            background-color: lightgreen;
+        }
+        .high, .low{
+            height:75px;
+            width: 500px;
+            background-color: lightcoral;
+        }
+    </style>
+    <title>Greater Number Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Great Number Game</h1>
+        <h3>I am thinking of a number between 1 and 100.</h3>
+        <h3>Take a guess!!!</h3>
+        {% if session['result'] == 'correct'%}
+        <!-- Correct input -->
+            <div class="correct">
+            <p>Congratulation, You guessed correct!! The correct number is {{session['target']}}</p>
+            <a href="/replay"><button>Play Again</button></a>
+            </div>
+        {% elif session['result'] == 'high'%}
+            <!-- Too high -->
+            <div class="high">
+            <p>Too high</p>
+            </div>
+        {% elif session['result'] == 'low'%}
+            <!-- Too low -->
+            <div class="low">
+            <p>Too low</p>
+            </div>
+        {% endif %}
+        <form action="/result" method="POST" class="maininput">
+        <!-- User input -->
+            <input class="input" type="text" name="input">
+            <a href="/result"><input class="submit" type="submit" name="submit"></a>
+        </form>
+    </div>
+    
+</body>
+</html>
