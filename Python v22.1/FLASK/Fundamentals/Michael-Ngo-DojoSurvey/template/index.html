@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class='container'>
+        <h1>Dojo Survey</h1>
+        <form action="/result" method="post" class="maininput">
+            <p>Name:</p>
+            <input class="name" type="text" name="name">
+            <p>Dojo Location:</p>
+            <select class="location" name="location">
+                <option disabled selected value>select an option</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Seatle">Seatle</option>
+                <option value="Online">Online</option>
+                <option value="McLean">McLean</option>
+                <option value="NewYork">NewYork</option>
+            </select>
+            <p>Favorite Language:</p>
+            <select class="language" name="language">
+                <option disabled selected value>select an option</option>
+                <option value="Python">Python</option>
+                <option value="C++">C++</option>
+                <option value="Ruby">Ruby</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Java">Java</option>
+            </select>
+            <p>Comment:</p>
+            <textarea class="comment" name="comment" rows="10" cols="50" placeholder="Comment here"></textarea>
+            <!-- Submit button -->
+            <a href='/result'><button class="'submit">Submit</button></a>
+        </form>
+    </div>
+</body>
+</html>
