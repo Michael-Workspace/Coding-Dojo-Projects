@@ -1,0 +1,13 @@
+1. TemplateNotFound: jinja2.exceptions.TemplateNotFound: index.html
+
+2. OperationalError: pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+3. AttributeError: AttributeError: 'NoneType' object has no attribute 'encoding'
+
+4. TypeError: TypeError: MySQLConnection.__init__() takes 1 positional argument but 2 were given
+
+5. NameError: NameError: name 'dc' is not defined
+
+6. TypeError: TypeError: 'NoneType' object is not iterable
+
+7. TypeError: TypeError: 'MySQLConnection' object is not iterable
