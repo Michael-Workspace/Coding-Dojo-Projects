@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Here are our user!!!</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Here are out user!!!</h1>
+        {% for one_user in all_users %}
+            <div class="info">
+                <p>First Name: {{one_user.first_name}}</p>
+                <p>Last Name: {{one_user.last_name}}</p>
+                <p>Email: {{one_user.email}}</p>
+                <p>Created At: {{one_user.created_at}}
+            </div>
+        {% endfor %}
+        <hr>
+        <a href='/new_user'> Add a User</a>
+    </div>
+</body>
+</html>
