@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>ADD USER</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Add User</h1>
+        <div class="text-center">
+            <form action="/create_user" method="post">
+                <div class="form-group">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="first_name">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" name="last_name">
+                </div>
+                <div class="form-group">
+                    <label for="email" >Email:</label>
+                    <input type="text" name="email">
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-default" type="submit" value="Add User">
+                    <a href='/' class="btn btn-default"> Back</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
