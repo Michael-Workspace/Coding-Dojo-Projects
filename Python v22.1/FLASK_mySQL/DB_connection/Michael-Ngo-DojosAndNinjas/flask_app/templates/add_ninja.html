@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>Ninja</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">New Ninja</h1>
+        <div class="text-center">
+            <form action="/create_ninja" method="post">
+                <!-- Choose a Dojo -->
+                <div class="form-group">
+                    <label for="dojos">Choose a Dojo:</label>
+                    <select name="dojo_id">
+                        {% for d in dojos %}
+                            <option value={{d.id}}>{{d.name}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <!-- First Name -->
+                <div class="form-group">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="first_name">
+                </div>
+                <!-- Last Name -->
+                <div class="form-group">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" name="last_name">
+                </div>
+                <!-- Age -->
+                <div class="form-group">
+                    <label for="age" >Age:</label>
+                    <input type="number" name="age">
+                </div>
+                <!-- Submit -->
+                <div class="form-group">
+                    <input class="btn btn-default" type="submit" value="Add Ninja">
+                    <a href='/' class="btn btn-default"> Back</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
